@@ -25,6 +25,10 @@ public class Master {
 		for (Class<? extends AbstractRobot> abstractRobot : abstractRobots) {
 			robotSet.add(abstractRobot.newInstance());
 		}
+		
+		if (robotSet.isEmpty()) {
+			System.err.println("No Robots Found.");
+		}
 
 		// We'll count down robots that still need steps
 		int aliveRobots = robotSet.size();
