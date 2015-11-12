@@ -28,6 +28,7 @@ public class Master {
 		
 		if (robotSet.isEmpty()) {
 			System.err.println("No Robots Found.");
+			return;
 		}
 
 		// We'll count down robots that still need steps
