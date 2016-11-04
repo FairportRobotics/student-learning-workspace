@@ -9,7 +9,8 @@ public class DanielsBot extends AdvancedRobot {
 		
 		while (true) {
 			
-			setAhead(100);
+			setAhead(1000);
+			setBack(1000);
 			
 		}
 		
