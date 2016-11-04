@@ -11,11 +11,12 @@ public void run()
 	{
 		ahead(20);
 		turnGunLeft(360);
+		fire(2);
 		turnLeft(90);
 		back(50);
 		turnGunRight(360);
+		fire(2);
 		turnRight(50);
-		scan();
 		fire(2);
 	}
 }
