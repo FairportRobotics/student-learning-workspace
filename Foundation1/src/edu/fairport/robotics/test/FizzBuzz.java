@@ -9,31 +9,30 @@ public class FizzBuzz {
 		
 		if (i % 5 == 0) {
 			ran = true;
-			System.err.println("Fizz! ");
+			System.err.print("Fizz! ");
 		} 
 		
 		if (hasFive) {
 			ran = true;
-			System.err.println("Fizz! ");
+			System.err.print("Fizz! ");
 		}
 		
 		return ran;
 	}
 	
 	public static boolean isBuzz(int i) {
-	
 		boolean ran = false;
 		String iString = Integer.toString(i);
 		boolean hasSeven = iString.contains("7");
 		
 		if (i % 7 == 0) {
 			ran = true;
-			System.err.println("Buzz! ");
+			System.err.print("Buzz! ");
 		}
 		
 		if (hasSeven) {
 			ran = true;
-			System.err.println("Buzz! ");
+			System.err.print("Buzz! ");
 		}
 		return ran;
 	}
@@ -43,10 +42,14 @@ public class FizzBuzz {
 	
 		
 		for (int i = 1; i <= 99; i++) {
+			
+			boolean fizz = FizzBuzz.isFizz(i);
+			boolean buzz = FizzBuzz.isBuzz(i);
 
-			if (!FizzBuzz.isFizz(i) && !FizzBuzz.isBuzz(i)) {
-				System.err.println();	
+			if (!fizz && !buzz) {
+				System.err.print(i);	
 			}
+			System.err.println();
 		}
 	}
 }
