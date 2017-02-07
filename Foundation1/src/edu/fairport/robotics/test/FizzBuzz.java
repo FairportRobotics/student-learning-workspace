@@ -1,54 +1,43 @@
 package edu.fairport.robotics.test;
 
 public class FizzBuzz {
-	
-	public static boolean isFizz(int i) {
-		boolean ran = false;
-		String iString = Integer.toString(i);
-		boolean hasFive = iString.contains("5");
-		
-		if (i % 5 == 0) {
-			ran = true;
-			System.err.print("Fizz! ");
-		} 
-		
-		if (hasFive) {
-			ran = true;
-			System.err.print("Fizz! ");
-		}
-		
-		return ran;
+
+	public static Tuple isFizzBuzz(int i) {
+		Tuple result = new Tuple();
+
+		boolean isFizz = FizzBuzz.determineFB(i, 5, "Fizz");
+		boolean isBuzz = FizzBuzz.determineFB(i, 7, "Buzz");
+
+		result.setFizz(isFizz);
+		result.setBuzz(isBuzz);
+
+		return result;
 	}
-	
-	public static boolean isBuzz(int i) {
+
+	public static boolean determineFB(int i, int number, String say) {
 		boolean ran = false;
-		String iString = Integer.toString(i);
-		boolean hasSeven = iString.contains("7");
-		
-		if (i % 7 == 0) {
+		boolean hasNumber = Integer.toString(i).contains("" + number);
+
+		if (i % number == 0) {
 			ran = true;
-			System.err.print("Buzz! ");
+			System.err.print(say + "! ");
 		}
-		
-		if (hasSeven) {
+
+		if (hasNumber) {
 			ran = true;
-			System.err.print("Buzz! ");
+			System.err.print(say + "! ");
 		}
 		return ran;
 	}
 
 	public static void main(String[] args) {
-
-	
-		
 		for (int i = 1; i <= 99; i++) {
-			
-			boolean fizz = FizzBuzz.isFizz(i);
-			boolean buzz = FizzBuzz.isBuzz(i);
+			Tuple t = FizzBuzz.isFizzBuzz(i);
 
-			if (!fizz && !buzz) {
-				System.err.print(i);	
+			if (!t.isFizz() && !t.isBuzz()) {
+				System.err.print(i);
 			}
+			
 			System.err.println();
 		}
 	}
