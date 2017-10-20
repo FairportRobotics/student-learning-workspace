@@ -15,6 +15,7 @@ public class BlakesRandomRobot extends Robot{
             back(60);
             turnRight(60);
             turnGunRight(360);
+            
             turnRight(60);
 		}
 		
