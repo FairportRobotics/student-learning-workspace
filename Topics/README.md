@@ -23,6 +23,8 @@
 - [Understanding PID Control, Part 2: Expanding Beyond a Simple Integral](https://www.youtube.com/watch?v=NVLXCwc8HzM)
 - [Understanding PID Control, Part 3: Expanding Beyond a Simple Derivative](https://www.youtube.com/watch?v=7dUVdrs1e18)
 - [Understanding PID Control, Part 4: A PID Tuning Guide](https://www.youtube.com/watch?v=sFOEsA0Irjs)
+- [Tuning PID](https://github.com/MTHSRoboticsClub/Documentation/blob/master/talon-PIDF-proceedures.md)
+- [Open vs Closed Loop Systems](https://www.youtube.com/watch?list=PLFFbyVlrhQnvaEyHXkfxpKRVzhDocc6eT&v=O-OqgFE9SD4)
 
 ## Robot Review ##
 
@@ -72,6 +74,8 @@
 - [CAP Theorem and Consistency Models](https://aphyr.com/posts/313-strong-consistency-models)
 
 ## Java ##
+- [Programming Done Right](https://frc-pdr.readthedocs.io/en/latest/)
+- [Reference](https://github.com/MTHSRoboticsClub/Documentation/blob/master/Java-Programming-team-3528.pdf)
 - packages
 - classes
 - variables
@@ -95,6 +99,7 @@
 - IO
 
 ## Robot Programming ##
+- [Reference](https://github.com/MTHSRoboticsClub/Documentation/blob/master/IntroProgrammingFRCRobots2012.pdf)
 - Command Based
 - RoboRIO
 - Networking
