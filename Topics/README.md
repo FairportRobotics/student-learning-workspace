@@ -7,7 +7,7 @@
 - Merging
 - Branches
 - CI/CD
-- git
+- [git reference](https://github.com/k88hudson/git-flight-rules)
 	- status
 	- init
 	- branching
