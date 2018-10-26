@@ -150,7 +150,7 @@
 ## Networking ##
 - [Comprehensive Guide to pfSense 2.3 Part 4: Networking Crash Course](https://www.youtube.com/watch?v=mgEMGoFIots)
 - OSI Model
-- Sockets
+- [Socket Programming](https://gist.github.com/tacksoo/4733928)
 - Ports
 - UDP/TCP
 - Routing
@@ -159,6 +159,7 @@
 - DNS
 - VPNs
 - HTTP / HTTPS
+
 
 ## Operating Systems ##
 - Real time vs scheduled
