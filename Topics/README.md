@@ -144,6 +144,7 @@
 -  GPUs
 -  CPU / Cores
 -  Slots
+- [Lets Review](https://www.parkytowers.me.uk/thin/hp/t620/index.shtml)
 
 
 
